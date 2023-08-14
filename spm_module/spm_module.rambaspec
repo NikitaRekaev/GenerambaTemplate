@@ -8,7 +8,18 @@ version: "0.1.0"
 # The declarations for code files
 
 code_files:
+
+# Sources 
+
 - {name: Sources/ViewController.swift, path: Code/Sources/view_controller.swift.liquid}
 - {name: Sources/ViewModel.swift, path: Code/Sources/view_model.swift.liquid}
 - {name: Sources/Factory.swift, path: Code/Sources/factory.swift.liquid}
 - {name: Sources/Coordinator.swift, path: Code/Sources/coordinator.swift.liquid}
+
+# Core
+
+- {name: Package.resolved, path: Code/package.resolved.liquid}
+- {name: Package.swift, path: Code/package.swift.liquid}
+- {name: README.md, path: Code/readme.md.liquid}
+- {name: .gitignore, path: Code/.gitignore.liquid}
+- {name: xcschememanagement.plist, path: Code/.swiftpm/xcode/xcuserdata/nikita.xcuserdatad/xcschemes/xcschememanagement.plist.liquid}
