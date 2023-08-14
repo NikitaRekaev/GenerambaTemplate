@@ -22,4 +22,4 @@ code_files:
 - {name: Package.swift, path: Code/package.swift.liquid}
 - {name: README.md, path: Code/readme.md.liquid}
 - {name: .gitignore, path: Code/.gitignore.liquid}
-- {name: xcschememanagement.plist, path: Code/.swiftpm/xcode/xcuserdata/nikita.xcuserdatad/xcschemes/xcschememanagement.plist.liquid}
+- {name: .swiftpm/xcode/xcuserdata/nikita.xcuserdatad/xcschemes/xcschememanagement.plist, path: Code/.swiftpm/xcode/xcuserdata/nikita.xcuserdatad/xcschemes/xcschememanagement.plist.liquid}
