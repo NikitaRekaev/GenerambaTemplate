@@ -1,0 +1,13 @@
+# Template information section
+name: "spm_module"
+summary: "SPM module template."
+author: "Nikita Rekaev"
+version: "0.1.0"
+
+# The declarations for code files
+
+code_files:
+- {name: Sources/view_controller.swift,  path: Code/Sources/view_controller.swift.liquid}
+- {name: Sources/view_model.swift, path: Code/Sources/view_model.swift.liquid}
+- {name: Sources/factory.swift, path: Code/Sources/factory.swift.liquid}
+- {name: Sources/coordinator.swift, path: Code/Sources/coordinator.swift.liquid}
