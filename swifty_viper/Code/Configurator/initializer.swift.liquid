@@ -1,0 +1,18 @@
+//  {{ module_info.file_name }}
+//  {{ developer.name }} {{ date }}
+
+import UIKit
+
+final class {{ module_info.name }}ModuleInitializer: NSObject {
+
+    // MARK: - Properties
+    var {{ module_info.name | downcase }}ViewController: {{ module_info.name }}ViewController!
+
+    // MARK: - Life cycle
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        let configurator = {{ module_info.name }}ModuleConfigurator()
+        configurator.configureModuleForViewInput(viewInput: {{ module_info.name | downcase }}ViewController)
+    }
+}

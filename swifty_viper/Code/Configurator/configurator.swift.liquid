@@ -1,0 +1,31 @@
+//  {{ module_info.file_name }}
+//  {{ developer.name }} {{ date }}
+
+import UIKit
+
+final class {{ module_info.name }}ModuleConfigurator {
+
+    // MARK: - Public Methods
+    func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
+
+        if let viewController = viewInput as? {{ module_info.name }}ViewController {
+            configure(viewController: viewController)
+        }
+    }
+
+    // MARK: - Private Methods
+    private func configure(viewController: {{ module_info.name }}ViewController) {
+
+        let router = {{ module_info.name }}Router()
+
+        let presenter = {{ module_info.name }}Presenter()
+        presenter.view = viewController
+        presenter.router = router
+
+        let interactor = {{ module_info.name }}Interactor()
+        interactor.output = presenter
+
+        presenter.interactor = interactor
+        viewController.output = presenter
+    }
+}

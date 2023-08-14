@@ -1,0 +1,27 @@
+//  {{ module_info.file_name }}
+//  {{ developer.name }} {{ date }}
+
+import Foundation
+
+final class {{ module_info.name }}Presenter: {{ module_info.name }}ModuleInput {
+
+    // MARK: - Properties
+    weak var view: {{ module_info.name }}ViewInput!
+    var interactor: {{ module_info.name }}InteractorInput!
+    var router: {{ module_info.name }}RouterInput!
+
+    // MARK: - Module Input
+    func viewIsReady() {
+
+    }
+}
+
+// MARK: - View Output
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
+    
+}
+
+// MARK: - Interactor Output
+extension {{ module_info.name }}Presenter: {{ module_info.name }}InteractorOutput {
+    
+}
